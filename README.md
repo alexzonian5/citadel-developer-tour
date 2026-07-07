@@ -47,6 +47,8 @@ flowchart TD
 
 For a slightly fuller version, read [`ARCHITECTURE_OVERVIEW.md`](./ARCHITECTURE_OVERVIEW.md).
 
+If you want the bluntest reality check, read [`REALITY_STATUS.md`](./REALITY_STATUS.md).
+
 ## Fastest reading order
 
 ### 1. Core control surfaces
@@ -108,6 +110,8 @@ That is the real architectural center of gravity.
 
 This repo is a comprehension pack, not a runtime-complete system dump.
 It is designed to let a developer sense the architecture quickly without exposing unrelated private context.
+
+A useful companion page is [`REALITY_STATUS.md`](./REALITY_STATUS.md), which separates what is already real from what is still doctrine, contract, or partial substrate.
 
 ## Good questions to ask after reading
 - Which parts are doctrine only, and which are runtime-enforced?
