@@ -1,24 +1,51 @@
-# Citadel Developer Tour Pack (GitHub-Safe)
+# Citadel Developer Tour Pack
 
-This is a curated, sanitized reading pack for a developer who needs to quickly understand what Citadel is, how it thinks, and how collaborator worlds work.
+A curated, public-safe tour of Citadel, a governed cognitive operating system.
 
-This pack is intentionally public-safe:
-- internal mission names are removed
-- collaborator identities are generalized
-- local machine paths are scrubbed
-- architecture is preserved while sensitive context is reduced
+Citadel is trying to make intelligence work **legible, routable, memory-backed, and governable** instead of leaving it as hidden agent behavior.
 
-## What Citadel is
+## Why this repo exists
 
-Citadel is a governed cognitive operating system.
+This is not a full private system dump.
+It is the smallest architecture slice that still lets a serious developer understand:
+- what Citadel is
+- how work gets routed
+- how collaborator worlds differ from ordinary assistant chats
+- where the real leverage is
 
-Its core ideas are:
-- mission-bound work
-- routing before reasoning
-- memory and truth on disk
-- explicit authority boundaries
-- collaborator worlds as membrane-bound lanes rather than generic chats
-- receipts, admission rules, and live-state surfaces instead of hidden agent behavior
+## The shortest possible explanation
+
+Citadel combines:
+- **law** so the system has explicit operating constraints
+- **state surfaces** so truth lives on disk instead of only in chat context
+- **routing contracts** so tasks are assigned intentionally
+- **bounded workflows** so autonomy stays observable and killable
+- **collaborator membranes** so different people get designed worlds instead of generic access
+- **authority separation** so coordination and heavy compute are not the same thing
+
+## Architecture at a glance
+
+```mermaid
+flowchart TD
+    A[Operator Input] --> B[Governor / Allocator]
+    B --> C[Retrieval]
+    B --> D[Deterministic Workflows]
+    B --> E[Local Models]
+    B --> F[Premium Cognition]
+    B --> G[Coder / Worker Lanes]
+
+    C --> H[Receipts + State Surfaces]
+    D --> H
+    E --> H
+    F --> H
+    G --> H
+
+    H --> I[Live Command Surface]
+    H --> J[Mission State]
+    H --> K[Collaborator Worlds]
+```
+
+For a slightly fuller version, read [`ARCHITECTURE_OVERVIEW.md`](./ARCHITECTURE_OVERVIEW.md).
 
 ## Fastest reading order
 
@@ -71,26 +98,18 @@ What to notice:
 - outward collaborator artifacts go through a governed publishing membrane
 - shared cells are bounded by front, tone, and escalation rules
 
-## The key architectural idea
-
-If you only remember one thing, remember this:
+## If you only remember one thing
 
 **Citadel is trying to make intelligence legible and governable.**
 
-It does that by combining:
-- explicit law
-- live state surfaces
-- routing contracts
-- collaborator membranes
-- bounded workflows
-- authority separation between sovereign coordination and worker execution
+That is the real architectural center of gravity.
 
 ## Important note
 
-This pack is a comprehension pack, not a runtime-complete repo dump.
-It is designed to let a serious developer sense the architecture quickly without exposing unrelated private context.
+This repo is a comprehension pack, not a runtime-complete system dump.
+It is designed to let a developer sense the architecture quickly without exposing unrelated private context.
 
-## Suggested questions for a developer
+## Good questions to ask after reading
 - Which parts are doctrine only, and which are runtime-enforced?
 - What packet schema currently sits between routing and execution?
 - How are receipts and state mutation enforced in practice?
