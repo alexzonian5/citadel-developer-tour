@@ -51,6 +51,8 @@ If you want the bluntest reality check, read [`REALITY_STATUS.md`](./REALITY_STA
 
 If you want one concrete walkthrough, read [`END_TO_END_PROOF.md`](./END_TO_END_PROOF.md).
 
+If you want to see the kind of governed work object the system is aiming for, read [`PACKET_SCHEMA_EXAMPLE.md`](./PACKET_SCHEMA_EXAMPLE.md).
+
 ## Fastest reading order
 
 ### 1. Core control surfaces
@@ -122,3 +124,4 @@ A useful companion page is [`REALITY_STATUS.md`](./REALITY_STATUS.md), which sep
 - How are collaborator-lane permissions implemented today versus specified?
 - Which parts of routing are already operational, and which remain design law?
 - What is the smallest end-to-end proof that shows input -> routing -> artifact -> receipt?
+- What does the governed work object actually look like between operator intent and execution?
