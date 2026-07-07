@@ -49,6 +49,8 @@ For a slightly fuller version, read [`ARCHITECTURE_OVERVIEW.md`](./ARCHITECTURE_
 
 If you want the bluntest reality check, read [`REALITY_STATUS.md`](./REALITY_STATUS.md).
 
+If you want one concrete walkthrough, read [`END_TO_END_PROOF.md`](./END_TO_END_PROOF.md).
+
 ## Fastest reading order
 
 ### 1. Core control surfaces
@@ -119,3 +121,4 @@ A useful companion page is [`REALITY_STATUS.md`](./REALITY_STATUS.md), which sep
 - How are receipts and state mutation enforced in practice?
 - How are collaborator-lane permissions implemented today versus specified?
 - Which parts of routing are already operational, and which remain design law?
+- What is the smallest end-to-end proof that shows input -> routing -> artifact -> receipt?
